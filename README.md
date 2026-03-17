@@ -16,7 +16,7 @@ The simulator is structured as a modular library. Each module is independent and
 
 ```
 qubit.py          — Qubit state representation, quantum gates, multi-qubit systems
-channel.py        — Quantum link with fidelity decay (decoherence model from 2020 paper)
+channel.py        — Quantum link with fidelity decay 
 node.py           — Network node (host or repeater)
 network.py        — Network topology manager
 routing.py        — Fidelity-based routing (maximizes end-to-end entanglement fidelity)
@@ -28,7 +28,7 @@ controller.py     — Entanglement-Defined Controller (EDC), inspired by the 202
 ## Key Concepts
 
 ### Decoherence Model
-Link fidelity decays over time according to the formula from the 2020 paper:
+Link fidelity decays over time according to the formula:
 
 ```
 F(t) = e^(-2γt)
@@ -46,7 +46,7 @@ F(path) = F(link_1) × F(link_2) × ... × F(link_n)
 The router finds the path that maximizes this value using DFS over the network graph.
 
 ### Quantum Teleportation
-The teleportation protocol follows the circuit described in the 2020 paper (Figure 3):
+The teleportation protocol follows these steps:
 
 1. Create EPR pair shared between source and destination
 2. Alice applies CNOT and H gates
@@ -105,7 +105,7 @@ pip install numpy
 
 ## Limitations and Future Work
 
-- Decoherence model is currently a probabilistic approximation. A full density matrix implementation using Lindblad operators (as described in the 2020 paper) would be more physically accurate.
+- Decoherence model is currently a probabilistic approximation. A full density matrix implementation using Lindblad operators would be more physically accurate.
 - Entanglement purification is not yet implemented.
 - Real-time simulation mode (time advances automatically in background) is planned.
 - The simulator does not yet support the quantum addressing scheme proposed in the 2026 paper.
