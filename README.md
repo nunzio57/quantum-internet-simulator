@@ -8,7 +8,7 @@ This project was inspired by the research of the Quantum Internet Research Group
 
 - *"Quantum Internet Architecture: Unlocking Quantum-Native Routing via Quantum Addressing"* — Caleffi, Cacciapuoti, IEEE Transactions on Communications, 2026
 
-The paper from 2026 explicitly identifies the lack of simulators supporting quantum-native SDN control as an open problem. This project is a very simple example. 
+The paper from 2026 explicitly identifies the lack of simulators supporting quantum-native SDN control as an open problem. This project is a very simple example buildt just for fun.
 
 ## Architecture
 
@@ -50,7 +50,7 @@ The teleportation protocol follows these steps:
 
 1. Create EPR pair shared between source and destination
 2. Alice applies CNOT and H gates
-3. Alice measures — obtains 2 classical bits
+3. Alice measures and she obtains 2 classical bits
 4. Bob applies corrections (X, Z gates) based on the 2 bits
 5. Decoherence is applied based on entanglement fidelity
 
