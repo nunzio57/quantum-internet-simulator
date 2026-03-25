@@ -35,7 +35,7 @@ class Teleportation:
 
     def _create_epr_pair(self):
         """Crea una coppia EPR perfetta |Φ+⟩"""
-        # crea due qubit separati che rappresentano la coppia EPR
+        # creo due qubit separati che rappresentano la coppia EPR
         epr_alice = Qubit(1+0j, 0+0j)
         epr_bob = Qubit(1+0j, 0+0j)
         # applica H ad alice e poi "entanglement"simulato
