@@ -104,13 +104,6 @@ Install with:
 pip install numpy
 ```
 
-## Limitations and Future Work
-
-- Decoherence model is currently a probabilistic approximation. A full density matrix implementation using Lindblad operators would be more physically accurate.
-- Entanglement purification is not yet implemented.
-- Real-time simulation mode (time advances automatically in background) is planned.
-- The simulator does not yet support the quantum addressing scheme proposed in the 2026 paper.
-
 ## Author
 
 Nunzio Giordano  
