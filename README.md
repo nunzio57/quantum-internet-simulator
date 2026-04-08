@@ -8,7 +8,8 @@ This project was inspired by the research of the Quantum Internet Research Group
 
 - *"Quantum Internet Architecture: Unlocking Quantum-Native Routing via Quantum Addressing"* — Caleffi, Cacciapuoti, IEEE Transactions on Communications, 2026
 
-The paper from 2026 explicitly identifies the lack of simulators supporting quantum-native SDN control as an open problem. This project is a very simple example buildt just for fun.
+I read this paper while exploring the field and found the open problems 
+around quantum-native simulation interesting enough to try building something.
 
 ## Architecture
 
@@ -114,3 +115,6 @@ pip install numpy
 
 Nunzio Giordano  
 MSc Computer Engineering, University of Naples Federico II
+
+Built as a personal learning project while approaching quantum networking 
+for the first time. FNS!
